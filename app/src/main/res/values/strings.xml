@@ -2,5 +2,5 @@
 <resources>
     <string name="app_name">Lab01</string>
     <string name="hello_message">Hello World</string>
-    <string name="ButtonText">Test Button</string>
+    <string name="ButtonText">I\'m a Button</string>
 </resources>
