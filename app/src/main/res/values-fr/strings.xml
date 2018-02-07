@@ -7,4 +7,11 @@
     <string name="username">Identifiant</string>
     <string name="pass">Mot de passe</string>
     <string name="switchstr">Qu\'est-ce que cela fait?</string>
+    <string name="cameraErr">Impossible de démarrer la caméra sans autorisation</string>
+    <string name="checked">Le commutateur est activé</string>
+    <string name="notchecked">L\'interrupteur est éteint</string>
+    <string name="dialog_message">Terminer l\'activité?</string>
+    <string name="dialog_title">CheckBox Exit</string>
+    <string name="cancel">Annuler</string>
+    <string name="ok">Exit</string>
 </resources>

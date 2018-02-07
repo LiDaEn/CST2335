@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import static android.util.Log.i;
 
@@ -38,6 +39,11 @@ public class StartActivity extends Activity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 50) {
             Log.i("StartActivity", "Returned to StartActivity.onActivityResult()");
+        }
+
+        if (resultCode == Activity.RESULT_OK){
+            String messagePassed = "ListItemActivity passed: " + data.getStringExtra("Response");
+            Toast.makeText(this, messagePassed.toString(), Toast.LENGTH_LONG).show();
         }
     }
 
