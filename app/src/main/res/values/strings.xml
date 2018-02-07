@@ -12,6 +12,6 @@
     <string name="notchecked">Switch is Off</string>
     <string name="dialog_message">Would you like to finish the activity?</string>
     <string name="dialog_title">CheckBox Exit</string>
-    <string name="cancel">Continuing Activity</string>
+    <string name="cancel">Cancel</string>
     <string name="ok">Exit</string>
 </resources>
