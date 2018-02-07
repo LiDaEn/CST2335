@@ -3,4 +3,15 @@
     <string name="app_name">Lab01</string>
     <string name="hello_message">Hello World</string>
     <string name="ButtonText">I\'m a Button</string>
+    <string name="Login">Login</string>
+    <string name="username">Login Name</string>
+    <string name="pass">Password</string>
+    <string name="switchstr">What Does This Do?</string>
+    <string name="cameraErr">Unable to invoke Camera without permission</string>
+    <string name="checked">Switch is On</string>
+    <string name="notchecked">Switch is Off</string>
+    <string name="dialog_message">Would you like to finish the activity?</string>
+    <string name="dialog_title">CheckBox Exit</string>
+    <string name="cancel">Continuing Activity</string>
+    <string name="ok">Exit</string>
 </resources>
