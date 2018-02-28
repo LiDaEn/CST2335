@@ -14,4 +14,6 @@
     <string name="dialog_title">CheckBox Exit</string>
     <string name="cancel">Annuler</string>
     <string name="ok">Exit</string>
+    <string name="startchat">Commencer le chat</string>
+    <string name="send">ENVOYER</string>
 </resources>

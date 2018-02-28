@@ -16,7 +16,8 @@ import static android.util.Log.i;
 public class StartActivity extends Activity {
 
     private Button button;
-
+    private Button chatbutton;
+    private String ACTIVITY_NAME = "StartActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,49 +33,61 @@ public class StartActivity extends Activity {
 
             }
         });
+
+        chatbutton = findViewById(R.id.button2);
+
+        chatbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(ACTIVITY_NAME, "User clicked 'StartChat'");
+                Intent chatIntent = new Intent(StartActivity.this, ChatActivity.class);
+                startActivity(chatIntent);
+            }
+        });
+
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 50) {
-            Log.i("StartActivity", "Returned to StartActivity.onActivityResult()");
+            Log.i(ACTIVITY_NAME, "Returned to StartActivity.onActivityResult()");
         }
 
         if (resultCode == Activity.RESULT_OK){
             String messagePassed = "ListItemActivity passed: " + data.getStringExtra("Response");
-            Toast.makeText(this, messagePassed.toString(), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, messagePassed, Toast.LENGTH_LONG).show();
         }
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.i("StartActivity", "In onResume()");
+        Log.i(ACTIVITY_NAME, "In onResume()");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        i("StartActivity", "In onStart()");
+        i(ACTIVITY_NAME, "In onStart()");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        i("StartActivity", "In onPause()");
+        i(ACTIVITY_NAME, "In onPause()");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        i("StartActivity", "In onStop()");
+        i(ACTIVITY_NAME, "In onStop()");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        i("StartActivity", "In onDestroy()");
+        i(ACTIVITY_NAME, "In onDestroy()");
     }
 
 

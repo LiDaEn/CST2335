@@ -14,4 +14,8 @@
     <string name="dialog_title">CheckBox Exit</string>
     <string name="cancel">Cancel</string>
     <string name="ok">Exit</string>
+    <string name="startchat">StartChat</string>
+    <string name="send">SEND</string>
+    <string name="outgoinguser">OutgoingUser</string>
+    <string name="placeholder">Lorem Ipsum</string>
 </resources>
